@@ -9,7 +9,6 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import NotificationsIcon from "@mui/icons-material/Notifications";
 
 import { NotificationCard } from "../components/NotificationCard";
 import { NotificationFilter } from "../components/NotificationFilter";
@@ -48,7 +47,7 @@ export function NotificationsPage() {
     <Box sx={{ maxWidth: 720, mx: "auto", px: 2, py: 4 }}>
       <Stack direction="row" alignItems="center" spacing={1.5} mb={3}>
         <Badge badgeContent={unreadCount} color="primary" max={99}>
-          <NotificationsIcon sx={{ fontSize: 28 }} />
+          <span style={{ fontSize: 28 }}>🔔</span>
         </Badge>
         <Typography variant="h5" fontWeight={700}>
           Notifications
